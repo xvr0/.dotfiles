@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ $(grep "gaps outer 0" ~/.config/i3/config) ]]
+then
+    sed -i 's/gaps outer 0/gaps outer 3/g' ~/.config/i3/config
+    sed -i 's/gaps inner 0/gaps inner 6/g' ~/.config/i3/config
+else
+    sed -i 's/gaps outer 3/gaps outer 0/g' ~/.config/i3/config
+    sed -i 's/gaps inner 6/gaps inner 0/g' ~/.config/i3/config
+fi
+
+i3-msg reload

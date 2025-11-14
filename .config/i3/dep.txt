@@ -1,0 +1,6 @@
+i3
+i3blocks (statusbar)
+rofi(dmenu, statusbarmenu)
+dunst(notifications)
+
+others (arch utils)
